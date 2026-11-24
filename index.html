@@ -5,6 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Random Data Generator</title>
 <meta name="description" content="Create realistic sample data as a CSV file — up to 10 million rows. A simple step-by-step builder with Unique, Required and Key rules. Runs entirely in your browser.">
+<meta property="og:site_name" content="useful-indeed">
+<meta property="og:title" content="Random Data Generator">
+<meta property="og:description" content="Create realistic sample data as a CSV file — up to 10 million rows. A simple step-by-step builder with Unique, Required and Key rules. Runs entirely in your browser.">
+<meta property="og:url" content="https://randomdata.useful-indeed.com/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://randomdata.useful-indeed.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QZY61DZ0G"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9QZY61DZ0G');</script>
 <meta name="theme-color" content="#F4F6F8">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -483,7 +494,6 @@ footer{text-align:center;color:var(--dim);font-size:13.5px;padding:24px 20px 110
   <div class="progress" id="progress" hidden><i></i></div>
 </header>
 
-<!-- ================= HOME ================= -->
 <div id="home">
   <section class="hero">
     <div>
@@ -560,10 +570,8 @@ footer{text-align:center;color:var(--dim);font-size:13.5px;padding:24px 20px 110
   <footer>Everything runs in your browser — your generated data is never uploaded or saved.<span hidden style="display:none!important">© <span id="cy">2026</span> Random Data Generator.</span></footer>
 </div>
 
-<!-- ================= WIZARD ================= -->
 <div class="wiz" id="wizard" hidden>
   <div class="card">
-    <!-- STEP 1 -->
     <section class="step" data-step="1">
       <div class="sh"><div class="n">1</div><div class="t"><div class="of">Step 1 of 5</div><h2>Choose your columns</h2><p>Give each column a name and pick the kind of data it should hold.</p></div>
         <div class="tools">
@@ -588,7 +596,6 @@ footer{text-align:center;color:var(--dim);font-size:13.5px;padding:24px 20px 110
       <button class="addcol" id="btnAdd">+ Add column</button>
     </section>
 
-    <!-- STEP 2 -->
     <section class="step" data-step="2">
       <div class="sh"><div class="n">2</div><div class="t"><div class="of">Step 2 of 5</div><h2>Data settings</h2><p>How many rows, how clean the data should be, and whether rows may repeat.</p></div></div>
       <div class="msgs" data-msgs></div>
@@ -623,7 +630,6 @@ footer{text-align:center;color:var(--dim);font-size:13.5px;padding:24px 20px 110
       </div>
     </section>
 
-    <!-- STEP 3 -->
     <section class="step" data-step="3">
       <div class="sh"><div class="n">3</div><div class="t"><div class="of">Step 3 of 5</div><h2>File format</h2><p>How the CSV file should be written. The defaults work for most tools.</p></div></div>
       <div class="msgs" data-msgs></div>
@@ -643,7 +649,6 @@ footer{text-align:center;color:var(--dim);font-size:13.5px;padding:24px 20px 110
       </div>
     </section>
 
-    <!-- STEP 4 -->
     <section class="step" data-step="4">
       <div class="sh"><div class="n">4</div><div class="t"><div class="of">Step 4 of 5</div><h2>Final check</h2><p>Everything in one place. Use <b>Edit</b> to change anything before you preview.</p></div>
         <div class="tools"><button class="btn" id="btnExport2">↧ Save schema</button><button class="btn" id="btnSql2">⌗ SQL DDL</button></div></div>
@@ -651,7 +656,6 @@ footer{text-align:center;color:var(--dim);font-size:13.5px;padding:24px 20px 110
       <div class="rv" id="review"></div>
     </section>
 
-    <!-- STEP 5 -->
     <section class="step" data-step="5">
       <div class="sh"><div class="n">5</div><div class="t"><div class="of">Step 5 of 5</div><h2>Preview &amp; download</h2><p>The first rows of your actual file.</p></div></div>
       <div class="msgs" data-msgs></div>
